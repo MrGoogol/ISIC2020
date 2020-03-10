@@ -1,0 +1,145 @@
+table {
+    width: 100%;
+  }
+  
+  .parcels {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  .parcel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .mat-column-fname, .mat-column-lname {
+    flex: 0 0 100px;
+  }
+  
+  
+  
+  progress::-webkit-progress-value {
+    transition: width 0.1s ease;
+  }
+  
+#video {
+  background-color: #000001;
+}
+  img {
+    width: 280px;
+    height: 300px
+  }
+  
+  
+  #container {
+    width: 100%;
+    background-color:  rgb(225, 226, 226);
+    margin: auto;
+  }
+  
+  
+  #first {
+    width: 50%;
+    float: right;
+    height: 400px;
+    color: #1b1502;
+    background-color: rgb(225, 226, 226);
+    
+  }
+  #second {
+    width: 50%;
+    float: left;
+    height: 400px;
+    color: #1b1502;
+    background-color: rgb(225, 226, 226);
+  }
+  #third {
+    width: 50%;
+    float: right;
+    height: 100px;
+    color: #1b1502;
+    background-color: rgb(225, 226, 226);
+    
+  }
+  #ctn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    font-weight: 200;
+    height: 400px;
+    margin: 0px 0;
+    
+    
+    min-height: 150px;
+    min-width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle }
+  
+  
+  
+  
+  
+  
+  .spinner {
+    width: 40px;
+    height: 40px;
+  
+    position: relative;
+    margin: 100px auto;
+  }
+  
+  .double-bounce1, .double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #333;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+  }
+  
+  .double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  @-webkit-keyframes sk-bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+  }
+  
+  @keyframes sk-bounce {
+    0%, 100% { 
+      transform: scale(0.0);
+      -webkit-transform: scale(0.0);
+    } 50% { 
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+    }
+  }
+  
+  .center {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #app {
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+  }
+  #canvas {
+    display: none;
+  }
+  li {
+    display: inline;
+    padding: 5px;
+  }

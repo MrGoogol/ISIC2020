@@ -1,0 +1,32 @@
+<br>
+  <div *ngIf="!loading" class="center"> 
+    <a class="button" (click)="startCamera()">Begin Streaming</a>
+  </div>
+  <div *ngIf="loading" class="center"> 
+    <a class="button" (click)="stopCamera(this.videoElement.nativeElement)">Stop Streaming</a>
+  </div>
+<br>
+  <div style="text-align:center">  
+  <div class="container vh-100">
+    <div class="d-flex flex-column align-items-center">
+      <div class="p-1">
+        <video #video id="video" width="600" height="600" autoplay></video>
+  <canvas #canvas id="canvas" width="600" height="600"></canvas>
+      </div>
+</div>
+      <div *ngIf="loading "> 
+      <p>Analysis Categories: </p>
+<div *ngIf="loading && !modelloaded"> 
+  <div class="spinner">
+    <div class="double-bounce1"></div>
+    <div class="double-bounce2"></div>
+  </div>
+</div>
+<div class="list-group">
+  <div class="list-group-item" *ngFor="let prediction of predictions">
+    {{prediction.label}} - {{prediction.prob| percent:'.2'}}
+  </div>
+</div>
+</div><br>
+</div>
+
